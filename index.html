@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemorphism calci</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button class="btn" id="fun">BIN</button>
+                <button class="btn" id="fun">OCT</button>
+                <button class="btn" id="fun">HEX</button>
+                <button class="btn" id="fun">DEC</button>
+                
+            </div>
+            <div class="row">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button id="ac" onclick="screen.value=''" class="arreglo">C</button>
+                <button class="btn" >+</button>
+                </button>
+            </div>
+
+            <div class="row">
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn" id="arreglo">-</button>
+                <button class="btn" >×</button>
+                
+            </div>
+            
+            <div class="row">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                
+                <button class="btn" id="arreglo">÷</button>
+                <button onclick="sqrt()" >√</button>
+                
+            </div>
+            
+            <div class="row">
+                <button class="btn">.</button>
+                <button class="btn">0</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button onclick="sin()" id="arreglo">sin</button>
+                <button onclick="cos()" >cos</button>
+            </div>
+            
+            <div class="row">
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button onclick="pow()" id="arreglo2">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
+                <button onclick="tan()" >tan</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/js.js"></script>
+</html>
